@@ -1,168 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Frullato</title>
-    
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Frullato</title>
 
-        body {
-            background-color: #fff9f0;
-            color: #333;
-            line-height: 1.6;
-        }
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
 
-        header {
-            background-color: #ff6b6b;
-            padding: 1rem;
-        }
+  <style>
+    body {
+      background-color: #fff9f0;
+      color: #333;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+    }
 
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
+    .navbar {
+      background-color: #ff6b6b;
+    }
 
-        .logo {
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: white;
-        }
+    .navbar-brand {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: white !important;
+    }
 
-        .nav-links {
-            display: flex;
-            gap: 1.5rem;
-        }
+    .nav-link {
+      color: white !important;
+      font-weight: 500;
+    }
 
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            transition: all 0.3s ease;
-        }
+    .nav-link:hover {
+      color: #ffed66 !important;
+    }
 
-        .nav-links a:hover {
-            color: #ffed66;
-        }
+    h1 {
+      color: #ff6b6b;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
 
-        main {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 2rem 1rem;
-        }
+    .about-container {
+      background-color: white;
+      border-radius: 8px;
+      padding: 2rem;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
 
-        .about-container {
-            background-color: white;
-            border-radius: 8px;
-            padding: 2rem;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-        }
+    .value-icon {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      color: #ff6b6b;
+    }
 
-        h1 {
-            color: #ff6b6b;
-            margin-bottom: 1rem;
-            text-align: center;
-        }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 1rem;
+      margin-top: 2rem;
+    }
 
-        p {
-            margin-bottom: 1rem;
-        }
+    .footer-section a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      margin: 0.25rem 0;
+    }
 
-        .values {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 2rem;
-        }
-
-        .value {
-            text-align: center;
-            flex: 1;
-        }
-
-        .value-icon {
-            font-size: 2rem;
-            margin-bottom: 0.5rem;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            margin-top: 2rem;
-        }
-        .footer-section{
-            display: flex;
-            flex-direction: column;
-        
-        }
-
-        @media (max-width: 600px) {
-            .nav-links {
-                gap: 1rem;
-            }
-            
-            .values {
-                flex-direction: column;
-                gap: 1.5rem;
-            }
-        }
-    </style>
+    .footer-section a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">Frullato</div>
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="menu.html">Menu</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-                <a href="help.html">Help!</a>
-            </div>
-        </nav>
-    </header>
 
-    <main>
-        <div class="about-container">
-            <h1>About Us</h1>
-            
-            <p>Founded in 2010, Frullato started with a simple mission: to create delicious, nutritious smoothies using only the freshest ingredients. What began as a small cart at the local farmers' market has grown into a beloved smoothie destination.</p>
-            
-            <p>We believe that what you put into your body matters. That's why we source only high-quality fruits and superfoods, working with local farmers whenever possible.</p>
-            
-            <div class="values">
-                <div class="value">
-                    <div class="value-icon">🌱</div>
-                    <p>Sustainability</p>
-                </div>
-                <div class="value">
-                    <div class="value-icon">🍎</div>
-                    <p>Quality</p>
-                </div>
-                <div class="value">
-                    <div class="value-icon">❤️</div>
-                    <p>Community</p>
-                </div>
-            </div>
+<body>
+
+  <!-- Header/Navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Frullato</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="help.html">Help!</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container py-5">
+    <div class="about-container">
+      <h1>About Us</h1>
+      <p>Founded in 2010, Frullato started with a simple mission: to create delicious, nutritious smoothies using only the freshest ingredients. What began as a small cart at the local farmers' market has grown into a beloved smoothie destination.</p>
+      <p>We believe that what you put into your body matters. That's why we source only high-quality fruits and superfoods, working with local farmers whenever possible.</p>
+      <br><p style="font-size: larger;">🍓 Why Choose Frullato?</p><br>
+✅ Fresh Ingredients – <br>We use high-quality fruits, real nuts, and rich dairy to blend every shake. <br>
+
+✅ Flavor Innovation – <br>Each recipe is designed to be unique and unforgettable. <br>
+
+✅ Perfectly Thick – <br>Our thick shakes are creamy, dense, and satisfying. <br>
+
+✅ Aesthetic Presentation – <br>Each shake is crafted beautifully for the eyes as well as the palate. <br>
+
+<br>
+      <!-- Values Section -->
+      <div class="row text-center mt-4">
+        <div class="col-md-4">
+          <div class="value-icon">🌱</div>
+          <p>Sustainability</p>
         </div>
-    </main>
-    <footer>
-        <div class="footer-section">
-                <h3>Connect</h3>
-                <a href="#" style=" color: white;text-decoration:none;">Instagram : Frullato_Nagpur</a>
-                <a href="#"style=" color: white;text-decoration:none;">Facebook : Frullato_Nagpur</a>
-                <a href="#"style=" color: white;text-decoration:none;">Twitter : @Frullato_Nagpur</a>
-                <a href="#"style=" color: white;text-decoration:none;">Email Us : frullatonagpur@gmail.com</a>
-            </div>
-    </footer>
+        <div class="col-md-4">
+          <div class="value-icon">🍎</div>
+          <p>Quality</p>
+        </div>
+        <div class="col-md-4">
+          <div class="value-icon">❤️</div>
+          <p>Community</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-section">
+      <h5>Connect</h5>
+      <a href="#">Instagram: Frullato_Nagpur</a>
+      <a href="#">Facebook: Frullato_Nagpur</a>
+      <a href="#">Twitter: @Frullato_Nagpur</a>
+      <a href="#">Email Us: frullatonagpur@gmail.com</a>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
