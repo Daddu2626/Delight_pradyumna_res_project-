@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+
+    background-color: #fad0c4;
+    justify-content: space-around;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.left {
+    color: white;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.middle {
+    display: flex;
+    position: relative;
+    /* width: 150px; */
+}
+
+.middle input {
+    align-items: center;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 0px 2px 5px #2ea6b833;
+    width: 350px;
+    /* height: 20px; */
+    transition: 0.4s ease-in-out;
+}
+
+.middle input:focus {
+    width: 450px;
+}
+
+.middle i {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    color: #555;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    background-color: rgb(7, 7, 15);
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    position: sticky;
+    margin-top: 10px;
+}
+
+
+nav ul {
+    display: flex;
+    color: white;
+}
+
+nav ul li {
+    list-style: none;
+    margin:23px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+}
+.right > ul > li >a{
+    text-decoration: none;
+}
+
+.right button {
+    display: flex;
+    align-items: center;
+    background-color: rgb(4, 170, 109);
+    padding: 10px;
+    padding-right: 15px;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid rgb(4, 170, 109);
+
+}
+u{
+    color:black;
+    text-decoration: none;
+}
+
+.right button:focus {
+    /* border: 1px solid; */
+    border-color: green;
+}
+
+.right button i {
+    padding: 5px;
+}
+
+.right button a{
+    text-decoration: none;
+}
+.main {
+    display: flex;
+    color: white;
+}
+main h2{
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.part1 {
+    display: flex;
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 5px;
+}
+.container{
+    margin-top: 15px;
+    margin-left: 50px;
+    margin-right: 0px;
+}
+
+.card:hover {
+    
+    transition: .3s ease-in-out;
+    transition-delay: .3s;
+    transform: translateY(-15px);
+}
+

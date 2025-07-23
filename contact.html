@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Frullato</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #fff9f0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #ff6b6b;
+            padding: 1rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: white;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #ffed66;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .contact-container {
+            background-color: white;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        h1 {
+            color: #ff6b6b;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .contact-info {
+            margin-bottom: 2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .contact-icon {
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            color: #ff6b6b;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        button {
+            background-color: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            font-weight: 500;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            align-self: flex-start;
+        }
+
+        button:hover {
+            background-color: #ff5252;
+        }
+
+        .contact-columns {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .contact-left, .contact-right {
+            flex: 1;
+        }
+
+        .hours {
+            margin-top: 2rem;
+        }
+
+        .hours h3 {
+            color: #ff6b6b;
+            margin-bottom: 0.5rem;
+        }
+
+        .hours-list {
+            list-style: none;
+        }
+
+        @media (max-width: 768px) {
+            .contact-columns {
+                flex-direction: column;
+            }
+            
+            .nav-links {
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Frullato</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="about.html">About</a>     
+                <a href="contact.html">contact</a>
+              <a href="help.html">Help!</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contact-container">
+            <h1>Contact Us</h1>
+            
+            <div class="contact-columns">
+                <div class="contact-left">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <p>Gurudev Nagar</p>
+                                <p>Nagpur City,440009</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <p>9922010421</p>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">✉️</div>
+                            <p>hello@frullato.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="hours">
+                        <h3>Hours</h3>
+                        <ul class="hours-list">
+                            <li>Monday - Friday: 8am - 8pm</li>
+                            <li>Saturday: 9am - 7pm</li>
+                            <li>Sunday: 10am - 6pm</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="contact-right">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" required></textarea>
+                        </div>
+                        
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

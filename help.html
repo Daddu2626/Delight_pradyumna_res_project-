@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help - Frullato</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #fff9f0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #ff6b6b;
+            padding: 1rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: white;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #ffed66;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .help-container {
+            background-color: white;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        h1 {
+            color: #ff6b6b;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .faq-item {
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 1rem;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: #ff6b6b;
+            padding: 0.5rem 0;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-answer {
+            padding-top: 0.5rem;
+            display: none;
+        }
+
+        .contact-prompt {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            background-color: #ff6b6b;
+            color: white;
+            text-decoration: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-btn:hover {
+            background-color: #ff5252;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Frullato</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>  
+                <a href="menu.html">Menu</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="help.html">Help</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="help-container">
+            <h1>Frequently Asked Questions</h1>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>What are your opening hours?</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Monday to Friday: 8am - 8pm<br>Saturday: 9am - 7pm<br>Sunday: 10am - 6pm</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Do you offer nutritional information?</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes! Nutritional information for all our products is available in-store and on our menu page.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Can I customize my smoothie?</span>
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Absolutely! We encourage customization with additional ingredients and supplements.</p>
+                </div>
+            </div>
+            
+            <div class="contact-prompt">
+                <p>Need more help?</p>
+                <a href="contact.html" class="contact-btn">Contact Us</a>
+            </div>
+        </div>
+    </main>
+  </body>
+</html>
+    
